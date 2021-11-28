@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap');
+*{font-family: "Kaushan Script";}
+    /*Medidas absolutas
+    (cm,mm,in,px,pt,pc)
+    
+    Medidas relativas
+    (em,ex,rem,vw,vh)
+    16px geralmente = 1em*/
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+}
+main{
+    background-color: rgb(102, 75, 63);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px#4b3123de;
+    width: 800px;
+    padding: 13px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;}
+p{
+font-size: 25px;
+font-family: 'Are You Serious', cursive;
+color: #ffffff;}
+img{
+    width: 100px;}
+

@@ -4,34 +4,55 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: #a9a9a9;
+}
+
 header{
-    padding: 50px;;
     background-color: #000;
     color: #fff;
     text-align: center;
 }
-header a{
+
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
-header a:hover{
+
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal{
+    background-color: #fff;
+    color: #000;
+}
+section.imagem{
+    background-color: #000000b7;
+    color: #fff;
+}
+
 footer{
     padding: 10px;
     background-color: #000;
     color: #fff;
     text-align: center;
-}
-footer p{
-    margin: 0px;
-}
-footer a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold   ;
-}
-footer a:hover{
-    text-decoration: underline;
 }

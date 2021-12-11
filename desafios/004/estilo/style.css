@@ -63,13 +63,21 @@ section.normal{
 }
 
 section.imagem{
-    background-color: #00000085;
+    margin-left: 10px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/17/23/02/sunflower-1206235_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 110vh;
+    background-color: #ffffff;
     color: #fff;
 }
 section.imagem >p{
     padding: 5px;
     display: inline-block;
-    background-color: #000;
+}
+section.imagem#segunda{
+    background-color: #fff;
+    background-image: url("https://blog.clubedeautores.com.br/wp-content/uploads/2019/06/book-1283865_640-640x410.jpg");
+    background-position: left bottom;
 }
 
 footer{

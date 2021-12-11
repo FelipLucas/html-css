@@ -57,27 +57,37 @@ section{
     font-size: 3vh;
 }
 
+section >p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: #fff;
     color: #000;
 }
-
 section.imagem{
-    margin-left: 10px;
-    background-image: url("https://cdn.pixabay.com/photo/2016/02/17/23/02/sunflower-1206235_960_720.jpg");
-    background-repeat: no-repeat;
-    background-size: 110vh;
-    background-color: #ffffff;
-    color: #fff;
+    background-color: #333333;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px #00000079;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 section.imagem >p{
     padding: 5px;
     display: inline-block;
+    background-color: #00000083;
+    text-shadow: 1px 1px 0px #000;
 }
-section.imagem#segunda{
-    background-color: #fff;
-    background-image: url("https://blog.clubedeautores.com.br/wp-content/uploads/2019/06/book-1283865_640-640x410.jpg");
-    background-position: left bottom;
+
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
 }
 
 footer{

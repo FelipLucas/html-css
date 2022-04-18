@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Inicio*/
+
+section#barra-inicio{
+    display: block;
+    max-height: 200px;
+}
+
+section#barra-inicio div{
+    display: flex;
+}
+
+section#barra-inicio div >img{
+    margin: 10px 10px 10px 10px;
+    max-width: 200px;
+    max-height: 20px;
+}
+
+section#barra-inicio div >img.barra-img-2{
+    display: inline-block;
+    justify-content: right;
+    align-items: right;
+}
+
+section#barra-inicio div h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #ff0000;
+    margin: 10px 10px 10px 10px;
+}

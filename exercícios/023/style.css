@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+body> p > iframe{
+    width: 600;
+    height: 1000;
+}

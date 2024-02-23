@@ -7,10 +7,13 @@
 </head>
 <body>
     <h1>Meu Primeiro formulario</h1>
-    <form>
-        <input type="text" name="Nome:" value="Nome:">
-        <input type="text" name="sobrenome" value="E-mail:">
-        <input type="submit" name="email" value="Enviar >">
+    <form action="cadastro.php" method="post">
+        <input type="text" name="nome" value="Nome:">
+        <label for="nome"></label>
+        <input type="text" name="email" value="E-mail:">
+        <label for="email"></label>
+        <input type="submit" name="send" value="Enviar >">
+        <label for="send"></label>
     </form>
 </body>
 </html>

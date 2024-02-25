@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on" style="display: flex; flex-direction: column; width: 200px; padding: 20px; gap: .5rem;">
+        <input type="text" name="nome" id="inome" placeholder="digite seu nome" required>
+        <label for="inome"></label>
+        <input type="email" name="email" id="iemail" placeholder="email" required>
+        <label for="iemail"></label>
+        <input type="password" name="senha" id="isenha" placeholder="senha" required>
+        <label for="isenha"></label>
+        <input type="number" name="notas" id="inotas" placeholder="notas" max="10" step=".1">
+        <input type="month" name="mes" id="imes">
+        <input type="submit" name="enviar" id="ienviar" value="Send >" required>
+        <label for="ienviar"></label>
+    </form>
+</body>
+</html>

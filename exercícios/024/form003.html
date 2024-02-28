@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Formulario de telefone e email</h1>
+    <form action="cadastro.php" style="display: flex; flex-direction: column; width: 300px; gap: 1rem;">
+        <fieldset style="padding: 15px; display: flex; flex-direction: column; gap: 5px;">
+            <legend>Dados pessoais</legend>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+            <label for="inumber">Telefone:</label>
+            <input type="tel" name="number" id="inumber" autocomplete="off" required max="10" pattern="^$\(\d{2} \)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+            <label for="isend"></label>
+            <input type="submit" name="Send" id="isend" value="Send >">
+        </fieldset>
+    </form>
+</body>
+</html>

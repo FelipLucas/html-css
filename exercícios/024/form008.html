@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="GET" autocomplete="on">
+        <div style="display: flex; flex-direction: column; width: 70px; gap: .5rem; margin-bottom: 1rem;">
+            <label for="in1">Numero 1:</label>
+            <input type="number" name="n1" id="1n1" min="0" max="50" required
+            oninput="isoma.innerHTMl = Number(in1.value) + Number(in2.value)">
+            <label for="in2">Numero 2:</label>
+            <input type="number" name="n2" id="1n2" min="0" max="50" required
+            oninput="isoma.innerHTMl = Number(in1.value) + Number(in2.value)">
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+        <div>
+            <input type="submit" name="send" id="isend" value="send >">
+            <label for="isend"></label>
+        </div>
+    </form>
+</body>
+</html>

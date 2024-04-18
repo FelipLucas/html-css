@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="index.js"defer></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .slide-container{
+            position: relative;
+            max-width: 97.2%;
+            width: 100%;
+            height: 500px;
+            aspect-ratio: 16/9;
+            /*background-color: rgb(109, 103, 103);*/
+            overflow: visible;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20rem 2rem 0 1rem;
+        }
+
+        .bi-caret-left-fill{
+            position: absolute;
+            left: 5px;
+            cursor: pointer;
+        }
+
+        
+        .bi-caret-right-fill{
+            position: absolute;
+            right: 5px;
+            cursor: pointer;
+        }
+
+        .slide-content{
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slide-content img{
+            width: 500px;   
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+    <title>Avaliação radio</title>
+</head>
+<body>
+ <section class="slide-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+    </svg>
+    <div class="slide-content">
+        <div class="swiper-slide">
+            <img src="https://64.media.tumblr.com/acf81e531e3c0dd92fae413f139e2c77/e6e6fee8b7024574-9b/s1280x1920/cb39409bb10102a4afbdec0438d9f1327efba108.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://th.bing.com/th/id/R.e44b6b703371fc8e0411c2d7d913d4ea?rik=0Zn%2fTczx5cp%2fiQ&pid=ImgRaw&r=0" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://yt3.ggpht.com/a/AATXAJxfLTPZSEOzdw3w-NEmBKZPnCpRv6cwAlQ2sw=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://avatarfiles.alphacoders.com/255/thumb-1920-255063.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://yt3.ggpht.com/a/AATXAJxfLTPZSEOzdw3w-NEmBKZPnCpRv6cwAlQ2sw=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://yt3.ggpht.com/a/AATXAJxfLTPZSEOzdw3w-NEmBKZPnCpRv6cwAlQ2sw=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://yt3.ggpht.com/a/AATXAJxfLTPZSEOzdw3w-NEmBKZPnCpRv6cwAlQ2sw=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+    </svg>
+ </section>
+</body>
+</html>

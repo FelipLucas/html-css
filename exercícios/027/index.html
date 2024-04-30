@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background: transparent;
+            background: linear-gradient(70deg, rgba(29,15,15,1) 0%, rgba(47,17,17,1) 7%, rgba(93,37,37,1) 17%, rgba(80,17,17,1) 36%, rgba(140,58,58,1) 53%, rgba(115,9,9,1) 68%, rgba(204,75,75,1) 84%, rgba(150,11,11,1) 100%);
+            background-size: 300% 300%;
+            animation: gradient 10s ease infinite;
+        }
+
+        .text-reveal{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .text-reveal::after{
+            content: "";
+            animation: text-reveal 1.5s cubic-bezier(.85, 0, .15, 1) forwards;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+        }
+
+        @keyframes text-reveal{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        @keyframes fade{
+            to{
+                opacity: 1;
+            }
+        }
+
+        h1{
+            animation: fade 1ms .75s forwards;
+            opacity: 0;
+            font-family: 'JetBrain', monospace;
+            font-size: 37px;
+            font-weight: 600;
+        }
+
+        @keyframes gradient{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+
+        .div-footer{
+            position: fixed;
+            right: 10%;
+            bottom: 10%;
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            outline: none;
+        }
+
+        .div-footer button{
+            animation: bouncing 1s ease-in-out alternate infinite;
+            background: 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .div-footer img{
+            width: 70px;
+            height: 70px;
+        }
+
+        @keyframes bouncing{
+            0%{
+                transform: translateY(10px);
+            }
+        }
+    </style>
     <title>Meadias Features</title>
 </head>
 <body>
-    <h1>Olá mundo</h1>
+    <div class="text-reveal">
+        <h1>Eu te amo Arila</h1>
+    </div>
+        <div class="div-footer">
+            <button>
+                <img src="https://mangaonline.biz/wp-content/uploads/2023/01/top.png" alt="">
+            </button>
+        </div>
+    </div>
 </body>
 </html>

@@ -115,7 +115,7 @@
 
         @keyframes is-rotating{
             100%{
-                transform: rotate(1turn);
+                transform: rotate(360deg);
             }
         }
 
@@ -159,7 +159,7 @@
             }
         }
 
-        @keyframes has-show{
+        /*@keyframes has-show{
             from{
                 opacity: 0;
                 transform: translateY(50px);
@@ -168,7 +168,7 @@
                 opacity: 1;
                 transform: translate(none);
             }
-        }
+        }*/
 
         .has-show{
             animation: has-show .8s ease-in-out forwards;
@@ -178,8 +178,8 @@
 </head>
 <body>
     <div class="text-reveal">
-        <h1 class="has-show">Hello, world</h1>
-        <div class="c-loader has-show"></div>
+        <h1 class="">Hello, world</h1>
+        <div class="c-loader"></div>
         <button class="btn-animated has-show">Quero fazer</button>
     </div>
         <div class="div-footer">
